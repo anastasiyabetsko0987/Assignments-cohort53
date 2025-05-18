@@ -15,7 +15,7 @@ it pure. Do the following:
 5. Confirm that you function passes the provided unit tests.
 ------------------------------------------------------------------------------*/
 // ! Function under test
-const shoppingCart = ['bananas', 'milk'];
+
 function addToShoppingCart(shoppingCart, item) {
   const newArray = [...shoppingCart, item];
   if (newArray.length > 3) {
