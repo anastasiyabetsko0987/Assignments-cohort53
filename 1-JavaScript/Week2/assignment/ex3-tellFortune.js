@@ -38,7 +38,12 @@ function selectRandomly(array) {
 }
 
 export function tellFortune(numKids, partnerNames, locations, jobTitles) {
-  return `You will be a ${selectRandomly(jobTitles)} in ${selectRandomly(locations)}, married to ${selectRandomly(partnerNames)} with ${selectRandomly(numKids)} kids.`;
+  const jobTitle = selectRandomly(jobTitles);
+  const location = selectRandomly(locations);
+  const partnerName = selectRandomly(partnerNames);
+  const numberOfKids = selectRandomly(numKids);
+
+  return `You will be a ${jobTitle} in ${location}, married to ${partnerName} with ${numberOfKids} kids.`;
 }
 
 function main() {

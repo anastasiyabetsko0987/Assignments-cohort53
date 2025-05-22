@@ -16,8 +16,8 @@ calculate it!
 -----------------------------------------------------------------------------*/
 
 export function calculateDogAge(age) {
-  age = age * 7;
-  return `Your doggie is ${age} years old in dog years!`;
+  const dogsAge = age * 7;
+  return `Your doggie is ${dogsAge} years old in dog years!`;
 }
 
 function main() {

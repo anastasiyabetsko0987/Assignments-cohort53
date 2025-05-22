@@ -30,8 +30,8 @@ const employeeRecords = [
 
 // ! Function under test
 function filterPrivateData(array) {
-  const newArray = array.map((el) => {
-    const { name, occupation, email } = el;
+  const newArray = array.map((employee) => {
+    const { name, occupation, email } = employee;
     return { name, occupation, email };
   });
   return newArray;
