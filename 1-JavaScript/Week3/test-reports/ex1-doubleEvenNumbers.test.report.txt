@@ -1,0 +1,23 @@
+*** Unit Test Error Report ***
+
+ PASS  1-JavaScript/Week3/assignment/ex1-doubleEvenNumbers.test.js
+  js-wk3-ex1-doubleEvenNumbers
+    ✅ doubleEvenNumbers should take the even numbers and double them (16 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        1.641 s
+Ran all test suites matching /C:\\Users\\иван\\Desktop\\Assignments-cohort53\\1-JavaScript\\Week3\\assignment\\ex1-doubleEvenNumbers.test.js/i.
+
+*** ESLint Report ***
+
+ex1-doubleEvenNumbers.test.js
+  22:1  error  'describe' is not defined  no-undef
+  23:3  error  'test' is not defined      no-undef
+  26:5  error  'expect' is not defined    no-undef
+
+✖ 3 problems (3 errors, 0 warnings)
+
+
+No spelling errors detected.
