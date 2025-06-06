@@ -33,14 +33,10 @@ const mondayTasks = [
 const hourlyRate = 25;
 
 function computeEarnings(tasks, hourlyRate) {
-  let total = 0;
-  tasks.forEach((element) => {
-    const duration = element.duration;
-    const hour = duration / 60;
-    const earning = hour * hourlyRate;
-    total += earning;
-  });
-  return `€${total.toFixed(2)}`;
+  const earnings = tasks
+    .map((task) => (task.duration / 60) * hourlyRate)
+    .reduce((sum, earning) => sum + earning, 0);
+  return `€${earnings.toFixed(2)}`;
 }
 
 // ! Unit tests (using Jest)
