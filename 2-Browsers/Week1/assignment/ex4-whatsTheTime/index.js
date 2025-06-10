@@ -7,7 +7,19 @@ Full description at: https://github.com/HackYourFuture/Assignments/tree/main/2-B
 2. Have the function execute when it's loading in the browser.
 ------------------------------------------------------------------------------*/
 function addCurrentTime() {
-  // TODO complete this function
-}
+  const div = document.createElement('div');
+  document.body.appendChild(div);
 
-// TODO execute `addCurrentTime` when the browser has completed loading the page
+  function updateTime() {
+    const time = new Date();
+    const hours = time.getHours();
+    const minutes = time.getMinutes();
+    const seconds = time.getSeconds();
+    const currentTime = `${hours} : ${minutes} : ${seconds}`;
+
+    div.innerText = currentTime;
+  }
+  updateTime();
+  setInterval(updateTime, 1000);
+}
+window.addEventListener('load', addCurrentTime);
